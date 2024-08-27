@@ -38,6 +38,7 @@ h2 {
     font-family: hoefler;
     font-size: clamp(0.3em, 7svw, 3em);
 }
+
 h3 {
 
     font-family: sans-serif;
@@ -119,11 +120,12 @@ section {
     margin-right: 0;
     margin-left: 1em;
 }
+
 .align-right {
     text-align: right;
 }
 
-.align-right p{
+.align-right p {
     margin-left: auto;
 }
 
@@ -146,6 +148,8 @@ section {
     box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
     transition: all .3s ease-out;
 }
+
+
 
 .project-btn {
     margin: 4em 2em 0 2em;
@@ -245,9 +249,6 @@ video {
     padding-top: 3em;
 }
 
-.hero-img {
-    /* padding-bottom: 50em; */
-}
 
 
 /* SITE HEADER */
@@ -292,6 +293,14 @@ video {
 
 /* HERO */
 
+
+.about-hero {
+    padding: var(--space-unit) 0;
+    align-content: center;
+    padding-top: 10em;
+}
+
+
 .hero {
     padding: var(--space-unit) 0;
     align-content: center;
@@ -306,12 +315,7 @@ video {
     align-content: center;
 }
 
-.heromain-sub {
-    /* display: grid;
-    justify-content: center;
-    align-content: center; */
-    /* place-items: center; */
-}
+
 
 .hero h1 {
     font-size: clamp(2em, 10vw, 6em);
@@ -331,6 +335,7 @@ video {
     font-family: hoefler;
 }
 
+.about-hero h3,
 .hero h3 {
     font-size: 5vw;
     font-size: clamp(4em, 13vw, 8em);
@@ -348,6 +353,7 @@ video {
     margin-top: 0; */
 }
 
+.about-hero,
 .heromain-sub .row {
     align-items: center;
 }
@@ -364,6 +370,20 @@ video {
     font-size: clamp(0.8em, 1.5vw, 2em);
     margin-top: 0;
 }
+
+
+.about-hero p {
+    color: #1c1c1c;
+    font-size: 1vw;
+    font-size: clamp(1em, 2vw, 1.2em);
+}
+
+.about-herosub-sub p {
+    color: #1c1c1c;
+    font-size: 1vw;
+    font-size: clamp(1em, 2vw, 1.2em);
+}
+
 
 .herosub-sub p {
     color: #1c1c1c;
