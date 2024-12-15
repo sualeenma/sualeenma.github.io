@@ -18,26 +18,28 @@ html {
 }
 
 body {
-    background-color: #efefef;
+    background-color: #fffef6;
     /* background-image: url("img/bg-organic.png"); */
     background-size: 100%;
-    color: #212121;
+    color: #316b76;
     margin: 0;
     font-family: avenir;
     font-weight: 300;
 }
 
 h1 {
-    font-size: 1.7em;
-    font-weight: 800;
-    font-family: hoefler serif;
+    font-size: em;
+    font-family: "Forum", serif;
+    font-weight: 500;
     font-style: normal;
 }
 
 h2 {
-    font-family: hoefler;
-    font-size: clamp(0.3em, 7svw, 3em);
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal;
 }
+
 
 h3 {
 
@@ -45,19 +47,19 @@ h3 {
 }
 
 .site-footer h4 {
-    color: rgb(38, 38, 38);
+    color: #175165;
 }
 
 
 
 h4 {
     font-family: avenir;
-    color: rgb(49, 49, 49);
+    color: #316b76;
 }
 
 h5 {
     font-family: avenir;
-    color: rgb(49, 49, 49);
+    color: #001f3b;
 }
 
 h6 {
@@ -72,7 +74,7 @@ p {
 
 a {
     text-decoration: none;
-    color: #3e3e3e;
+    color: #175165;
 }
 
 ul.mockups {
@@ -137,6 +139,43 @@ section {
 
 
 .btn {
+    position: relative;
+    display: inline-block;
+    /* margin: 1em; */
+    padding: 1em 2em;
+    border: 0;
+    border-radius: 130px;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: forum;
+}
+
+
+.btn:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+    box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn {
+    background-color: #b9f3ff;
+    border: 1px solid #175165;
+    color: #175165;
+}
+
+
+
+/* .btn {
     display: inline-block;
     padding: .5em 1.5em;
     transition: all .3s ease-in;
@@ -147,7 +186,7 @@ section {
     transform: translate(0px, -2px);
     box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
     transition: all .3s ease-out;
-}
+} */
 
 
 
@@ -264,8 +303,8 @@ video {
 
 .site-logo {
     padding: 1em;
-    font-size: 1.5em;
-    font-weight: 700;
+    font-size: 1em;
+    font-weight: 100;
 }
 
 /* SITE NAV */
@@ -275,7 +314,7 @@ video {
     margin: 0;
     position: relative;
     list-style: none;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .site-nav ul {
@@ -286,26 +325,24 @@ video {
     display: block;
     padding: 1em;
     text-decoration: none;
-    color: rgb(50, 50, 50);
+    color: #00294d;
     font-family: avenir;
-    font-weight: 400;
 }
 
 /* HERO */
 
 
-.about-hero {
+/* .about-hero {
     padding: var(--space-unit) 0;
     align-content: center;
     padding-top: 10em;
-}
+} */
 
 
 .hero {
     padding: var(--space-unit) 0;
     align-content: center;
-    padding-top: 10em;
-    padding-bottom: 10em;
+    padding-top: 1em;
 }
 
 .heromain {
@@ -317,13 +354,19 @@ video {
 
 
 
+.heromain-sub {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    place-items: center;
+}
+
 .hero h1 {
-    font-size: clamp(2em, 10vw, 6em);
-    margin-top: 1em;
+    font-size: clamp(4em, 13vw, 8em);
     margin-bottom: 0;
-    line-height: .8;
-    font-family: hoefler;
-    color: #383838;
+    line-height: 1;
+    font-family: "Forum", serif;
+    color: #175165;
     justify-content: left;
 }
 
@@ -335,14 +378,15 @@ video {
     font-family: hoefler;
 }
 
-.about-hero h3,
 .hero h3 {
     font-size: 5vw;
-    font-size: clamp(4em, 13vw, 8em);
+    font-size: clamp(4em, 13vw, 5em);
     margin-bottom: 0;
     margin-top: 0.5em;
-    color: #252525;
-    font-family: hoefler;
+    color: #175165;
+    font-family: "Forum", serif;
+    font-weight: 500;
+    font-style: normal;
     /* padding-top: 0.4em; */
     justify-content: center;
 }
@@ -353,7 +397,7 @@ video {
     margin-top: 0; */
 }
 
-.about-hero,
+
 .heromain-sub .row {
     align-items: center;
 }
@@ -364,38 +408,30 @@ video {
 
 .heromain p,
 .herosub p {
-    font-family: avenir;
-    color: #292929;
-    font-size: 1vw;
-    font-size: clamp(0.8em, 1.5vw, 2em);
-    margin-top: 0;
+    font-family: forum;
+    color: #175165;
+    font-size: clamp(2em, 1.5vw, 4em);
+    margin-top: 1em;
 }
-
-
-.about-hero p {
-    color: #1c1c1c;
-    font-size: 1vw;
-    font-size: clamp(1em, 2vw, 1.2em);
-}
-
-.about-herosub-sub p {
-    color: #1c1c1c;
-    font-size: 1vw;
-    font-size: clamp(1em, 2vw, 1.2em);
-}
-
 
 .herosub-sub p {
-    color: #1c1c1c;
+    color: #175165;
     font-size: 1vw;
     font-size: clamp(1em, 2vw, 1.2em);
-    padding-bottom: 7em;
     /* width: 100%; */
 }
 
 .heromain-sub .row .mini-info {
-    width: 10em;
+    width: 20em;
 }
+
+.about-herosub-sub p {
+    font-family: forum;
+    color: #1c1c1c;
+    font-size: 1vw;
+    font-size: clamp(1em, 2vw, 1.2em);
+}
+
 
 
 .hanging {
@@ -404,13 +440,13 @@ video {
 
 /* MAIN */
 main {
-    padding-bottom: 6em;
+    /* padding-bottom: 6em; */
 }
 
 /* FOOTER */
 
 .site-footer {
-    background-color: #fff8f8;
+    background-color: #fffef6;
     padding: 3em var(--space-unit);
 }
 
@@ -779,11 +815,11 @@ main {
 
 .projects {
     --base-grid: 8px;
-    --colour-background: rgb(255, 255, 255);
-    --colour-background-undercard: rgb(255, 255, 255);
+    --colour-background: #175165;
+    --colour-background-undercard: #fffef6;
     --colour-background-folded: rgb(240, 240, 240);
     --colour-background-stripes: rgb(240, 240, 240);
-    --colour-text: #343434;
+    --colour-text: #175165;
     margin: calc(var(--base-grid)*2) auto calc(var(--base-grid)*5);
     display: grid;
     grid-row-gap: calc(var(--base-grid)*8);
@@ -827,7 +863,7 @@ main {
 
 .projects a {
     background-color: var(--colour-background-undercard);
-    border: 2px solid var(--colour-background);
+    /* border: 1px solid var(--colour-background); */
     display: block;
     width: 100%;
     height: 100%;
@@ -946,6 +982,40 @@ img {
     height: auto;
 }
 
+.hero-projects {
+    display: flex;
+    gap: 3em;
+    margin-top: 6em;
+
+}
+
+
+.hero-image {
+    width: 1000px;
+    height: 1000px;
+    object-fit: cover;
+}
+
+.sub-hero-img {
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+}
+
+.home-about-image {
+    justify-content: center;
+    display: block;
+    width: 400px;
+    height: auto;
+}
+
+.about-image {
+    justify-content: center;
+    display: block;
+    width: 500px;
+    height: auto;
+}
+
 .home-grid {
     margin: 0;
     padding: 0;
@@ -1054,13 +1124,12 @@ html .swiper-navigation-size {
 .scrolldown {
     --sizeX: 200px;
     --sizeY: 200px;
-    position: relative;
+    position: absolute;
     width: var(--sizeX);
     height: var(--sizeY);
     margin-left: var(sizeX / 2);
-    margin-top: 10em;
-    margin-bottom: 10em;
-    margin-left: auto;
+    /* margin-top: 10em; */
+    margin-left: 38%;
     margin-right: auto;
     display: grid;
     justify-items: center;
@@ -1092,7 +1161,7 @@ html .swiper-navigation-size {
 .scrolldown-arrow {
     width: 20px;
     height: 30px;
-    background-color: #000;
+    background-color: #175165;
     grid-column: 1;
     grid-row: 1;
     clip-path: polygon(100% 0%, 50% 100%, 1% 0%, 50% 15%);
@@ -1112,4 +1181,40 @@ html .swiper-navigation-size {
     100% {
         transform: translateY(-50%);
     }
+}
+
+.home-about {
+    display: flex;
+    justify-content: center;
+    gap: 7em;
+}
+
+.home-about-text {
+    margin-top: 7em;
+
+}
+
+.above-home-about p {
+    font-family: forum;
+    color: #175165;
+    font-size: clamp(1.5em, 2vw, 3em);
+}
+
+.above-home-about h1 {
+    font-family: forum;
+    color: #175165;
+    font-size: clamp(2em, 13vw, 7em);
+}
+
+.home-about h2 {
+    margin-top: 3em;
+    font-family: forum;
+    color: #175165;
+    font-size: clamp(3em, 1.5vw, 5em);
+}
+
+.home-about p {
+    font-family: forum;
+    color: #175165;
+    font-size: clamp(1em, 1.5vw, 2em);
 }
